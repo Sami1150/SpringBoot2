@@ -12,6 +12,7 @@ public class Teacher {
     private int salary;
 
     public Teacher() {
+
     }
 
     public Teacher(long id, String course, int salary) {

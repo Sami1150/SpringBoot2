@@ -35,7 +35,7 @@ public class TeacherController {
         return ResponseEntity.ok(teacher);
     }
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<Teacher> create(@RequestBody Teacher teacher) {
         Teacher created = service.create(teacher);
         if (created != null) {
@@ -43,5 +43,36 @@ public class TeacherController {
         }
         return ResponseEntity.status(HttpStatus.CONFLICT).build();
     }
+
+    //PUT Mapping
+    @PutMapping("/{id}/")
+    public ResponseEntity<Teacher> update(@PathVariable long id, @RequestBody Teacher teacher) {
+        Teacher updated = service.update(id, teacher);
+        if (updated != null) {
+            return ResponseEntity.ok(updated);
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<Void> delete(@PathVariable long id) {
+//        boolean deleted = service.delete(id);
+//        if (deleted) {
+//            return ResponseEntity.noContent().build(); //204 No content
+//        }
+//        return ResponseEntity.notFound().build();  //404 Not Found
+//    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> delete(@PathVariable long id) {
+        boolean deleted = service.delete(id);
+        if (deleted) {
+            return ResponseEntity.ok("Resource deleted successfully");
+        }
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Resource not found or could not be deleted");
+    }
+
+
+
 
 }
