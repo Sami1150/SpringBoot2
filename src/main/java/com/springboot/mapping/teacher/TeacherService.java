@@ -46,6 +46,7 @@ public class TeacherService {
     public Teacher create(Teacher teacher) {
 
         logger.info("Teacher with id {} is added. ", teacher.getId());
+
         return repository.save(teacher);
     }
 
