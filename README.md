@@ -1,5 +1,9 @@
 # SpringBoot2
-Technical Training at RedMath /n \n
-  • Liquibase Implementation
-  • h2 Implementation 
-  • Unit Testing
+<h1>Technical Training at RedMath </h1>
+<br>
+<ul>
+  <li>Liquibase Implementation</li>
+  <li>h2 Implementation</li>
+  <li>Servelet functions implemented</li>
+  <li>Unit Testing of Servelet functions</li>
+</ul>
