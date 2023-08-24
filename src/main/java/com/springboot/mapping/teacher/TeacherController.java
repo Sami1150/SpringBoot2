@@ -17,13 +17,23 @@ public class TeacherController {
     }
 
     @GetMapping
-    public ResponseEntity<Map<String, List<Teacher>>> findAll() {
-        List<Teacher> teachers = service.findAll();
+    public ResponseEntity<Map<String, List<Teacher>>> findAll(@RequestParam(name = "course", required = false) String course) {
+        List<Teacher> teachers;
+
+        if (course != null && !course.isEmpty()) {
+            teachers = service.findByCourseContaining(course);
+        } else {
+            teachers = service.findAll();
+        }
+
         if (teachers.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
+
         return ResponseEntity.ok(Map.of("content", teachers));
     }
+
+
 
 
     @GetMapping("/{id}")
