@@ -1,5 +1,4 @@
-# SpringBoot2
-<h1>Technical Training at RedMath </h1>
+<h1> Spring Boot - Technical Training at RedMath </h1>
 <br>
 <ul>
   <li>h2 Implementation</li>
