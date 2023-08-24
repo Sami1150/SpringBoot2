@@ -5,4 +5,8 @@
   <li>Liquibase Implementation</li>
   <li>Servelet functions implemented</li>
   <li>Unit Testing of Servelet functions</li>
+  <li>env.getProperty()</li>
+  <li>@Value</li>
+  <li>Logging properties</li>
+  <li>logback-spring.xml</li>
 </ul>
