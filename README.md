@@ -9,4 +9,5 @@
   <li>@Value</li>
   <li>Logging properties</li>
   <li>logback-spring.xml</li>
+  <li>Spring Security Dependency</li>
 </ul>
