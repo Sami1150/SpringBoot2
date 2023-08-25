@@ -10,5 +10,5 @@
   <li>Logging properties</li>
   <li>logback-spring.xml</li>
   <li>Spring Security Dependency</li>
-  <li>Updated Configuration File</li>
+  <li>Configuration File</li>
 </ul>
