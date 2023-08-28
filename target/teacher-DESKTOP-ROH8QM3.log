@@ -616,3 +616,306 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
 2023-08-28T14:14:27.823+05:00  INFO 7428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-08-28T14:14:27.823+05:00  INFO 7428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-08-28T14:14:27.825+05:00  INFO 7428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-28T14:17:47.071+05:00  INFO 7428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T14:17:47.074+05:00  INFO 7428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-28T14:17:47.076+05:00  INFO 7428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-28T14:55:19.919+05:00  INFO 15860 --- [main] c.springboot.mapping.MappingApplication  : Starting MappingApplication using Java 17.0.8 with PID 15860 (C:\Users\sami.ahmad\Downloads\workspaces\mapping\target\classes started by sami.ahmad in C:\Users\sami.ahmad\Downloads\workspaces\mapping)
+2023-08-28T14:55:19.921+05:00 DEBUG 15860 --- [main] c.springboot.mapping.MappingApplication  : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-28T14:55:19.922+05:00  INFO 15860 --- [main] c.springboot.mapping.MappingApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-08-28T14:55:21.223+05:00  INFO 15860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28T14:55:21.292+05:00  INFO 15860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-08-28T14:55:22.078+05:00  INFO 15860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-28T14:55:22.089+05:00  INFO 15860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-28T14:55:22.089+05:00  INFO 15860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-28T14:55:22.204+05:00  INFO 15860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-28T14:55:22.204+05:00  INFO 15860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2215 ms
+2023-08-28T14:55:22.361+05:00  INFO 15860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-28T14:55:22.576+05:00  INFO 15860 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testDB user=SA
+2023-08-28T14:55:22.578+05:00  INFO 15860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-28T14:55:22.589+05:00  INFO 15860 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDB'
+2023-08-28T14:55:22.864+05:00  INFO 15860 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-28T14:55:23.391+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.395+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.399+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.402+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.407+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.408+05:00  INFO 15860 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-28T14:55:23.423+05:00  INFO 15860 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-28T14:55:23.427+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.428+05:00  INFO 15860 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-28T14:55:23.430+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.431+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.474+05:00  INFO 15860 --- [main] liquibase.changelog                      : Table teacher created
+2023-08-28T14:55:23.476+05:00  INFO 15860 --- [main] liquibase.changelog                      : Primary key added to teacher (id)
+2023-08-28T14:55:23.477+05:00  INFO 15860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::teacher team ran successfully in 5ms
+2023-08-28T14:55:23.481+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.482+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.484+05:00  INFO 15860 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T14:55:23.486+05:00  INFO 15860 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T14:55:23.487+05:00  INFO 15860 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T14:55:23.487+05:00  INFO 15860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::teacher team ran successfully in 4ms
+2023-08-28T14:55:23.488+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.493+05:00  INFO 15860 --- [main] liquibase.changelog                      : Table users created
+2023-08-28T14:55:23.494+05:00  INFO 15860 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-28T14:55:23.497+05:00  INFO 15860 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-28T14:55:23.497+05:00  INFO 15860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::teacher team ran successfully in 8ms
+2023-08-28T14:55:23.499+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.502+05:00  INFO 15860 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T14:55:23.504+05:00  INFO 15860 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T14:55:23.504+05:00  INFO 15860 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-28T14:55:23.505+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.507+05:00  INFO 15860 --- [main] liquibase                                : Update command completed successfully.
+2023-08-28T14:55:23.508+05:00  INFO 15860 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:55:23.509+05:00  INFO 15860 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-28T14:55:23.694+05:00  INFO 15860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28T14:55:23.774+05:00  INFO 15860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-28T14:55:23.778+05:00  INFO 15860 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-28T14:55:23.987+05:00  INFO 15860 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T14:55:24.167+05:00  INFO 15860 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-28T14:55:24.474+05:00  INFO 15860 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T14:55:25.237+05:00  INFO 15860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28T14:55:25.240+05:00  INFO 15860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T14:55:25.704+05:00  INFO 15860 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-28T14:55:26.417+05:00  INFO 15860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a516e4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6faa24, org.springframework.security.web.context.SecurityContextHolderFilter@7f3616d2, org.springframework.security.web.header.HeaderWriterFilter@47d8c666, org.springframework.security.web.csrf.CsrfFilter@7c9a0166, org.springframework.security.web.authentication.logout.LogoutFilter@5d8319a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6212dc7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64bcf689, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fcf3192, org.springframework.security.web.access.ExceptionTranslationFilter@3c832820]
+2023-08-28T14:55:26.605+05:00  INFO 15860 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-28T14:55:27.315+05:00  WARN 15860 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator', GET]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-28T14:55:27.317+05:00  INFO 15860 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator', GET]
+2023-08-28T14:55:27.345+05:00  INFO 15860 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-28T14:55:27.449+05:00  INFO 15860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-28T14:55:27.464+05:00  INFO 15860 --- [main] c.springboot.mapping.MappingApplication  : Started MappingApplication in 8.216 seconds (process running for 8.649)
+2023-08-28T14:55:33.724+05:00  INFO 15860 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-28T14:55:33.725+05:00  INFO 15860 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-28T14:55:33.727+05:00  INFO 15860 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-28T14:55:36.926+05:00 DEBUG 15860 --- [http-nio-8080-exec-1] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T14:55:43.575+05:00 DEBUG 15860 --- [http-nio-8080-exec-3] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T14:55:47.326+05:00 DEBUG 15860 --- [http-nio-8080-exec-4] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Math
+2023-08-28T14:57:30.819+05:00 DEBUG 15860 --- [http-nio-8080-exec-7] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: a
+2023-08-28T14:58:10.938+05:00  INFO 15860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T14:58:10.942+05:00  INFO 15860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-28T14:58:10.944+05:00  INFO 15860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-28T14:58:14.782+05:00  INFO 10676 --- [main] c.springboot.mapping.MappingApplication  : Starting MappingApplication using Java 17.0.8 with PID 10676 (C:\Users\sami.ahmad\Downloads\workspaces\mapping\target\classes started by sami.ahmad in C:\Users\sami.ahmad\Downloads\workspaces\mapping)
+2023-08-28T14:58:14.784+05:00 DEBUG 10676 --- [main] c.springboot.mapping.MappingApplication  : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-28T14:58:14.785+05:00  INFO 10676 --- [main] c.springboot.mapping.MappingApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-08-28T14:58:16.066+05:00  INFO 10676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28T14:58:16.135+05:00  INFO 10676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2023-08-28T14:58:16.978+05:00  INFO 10676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-28T14:58:16.988+05:00  INFO 10676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-28T14:58:16.989+05:00  INFO 10676 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-28T14:58:17.092+05:00  INFO 10676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-28T14:58:17.092+05:00  INFO 10676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2249 ms
+2023-08-28T14:58:17.237+05:00  INFO 10676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-28T14:58:17.460+05:00  INFO 10676 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testDB user=SA
+2023-08-28T14:58:17.462+05:00  INFO 10676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-28T14:58:17.474+05:00  INFO 10676 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDB'
+2023-08-28T14:58:17.695+05:00  INFO 10676 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-28T14:58:18.258+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.261+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.266+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.269+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.282+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.283+05:00  INFO 10676 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-28T14:58:18.299+05:00  INFO 10676 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-28T14:58:18.303+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.303+05:00  INFO 10676 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-28T14:58:18.306+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.307+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.351+05:00  INFO 10676 --- [main] liquibase.changelog                      : Table teacher created
+2023-08-28T14:58:18.353+05:00  INFO 10676 --- [main] liquibase.changelog                      : Primary key added to teacher (id)
+2023-08-28T14:58:18.354+05:00  INFO 10676 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::teacher team ran successfully in 6ms
+2023-08-28T14:58:18.358+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.359+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.362+05:00  INFO 10676 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T14:58:18.363+05:00  INFO 10676 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T14:58:18.364+05:00  INFO 10676 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T14:58:18.365+05:00  INFO 10676 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::teacher team ran successfully in 4ms
+2023-08-28T14:58:18.366+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.370+05:00  INFO 10676 --- [main] liquibase.changelog                      : Table users created
+2023-08-28T14:58:18.371+05:00  INFO 10676 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-28T14:58:18.374+05:00  INFO 10676 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-28T14:58:18.375+05:00  INFO 10676 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::teacher team ran successfully in 7ms
+2023-08-28T14:58:18.376+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.379+05:00  INFO 10676 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T14:58:18.381+05:00  INFO 10676 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T14:58:18.382+05:00  INFO 10676 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-28T14:58:18.383+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.384+05:00  INFO 10676 --- [main] liquibase                                : Update command completed successfully.
+2023-08-28T14:58:18.386+05:00  INFO 10676 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T14:58:18.387+05:00  INFO 10676 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-28T14:58:18.501+05:00  INFO 10676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28T14:58:18.594+05:00  INFO 10676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-28T14:58:18.597+05:00  INFO 10676 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-28T14:58:18.806+05:00  INFO 10676 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T14:58:18.955+05:00  INFO 10676 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-28T14:58:19.219+05:00  INFO 10676 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T14:58:19.925+05:00  INFO 10676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28T14:58:19.929+05:00  INFO 10676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T14:58:20.332+05:00  INFO 10676 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-28T14:58:20.948+05:00  INFO 10676 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b8de9dc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a8fa30a, org.springframework.security.web.context.SecurityContextHolderFilter@5dbd7f00, org.springframework.security.web.header.HeaderWriterFilter@4b45016d, org.springframework.security.web.csrf.CsrfFilter@4a65ce06, org.springframework.security.web.authentication.logout.LogoutFilter@758e8b8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@138c2ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a700311, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@522941b2, org.springframework.security.web.access.ExceptionTranslationFilter@295d1a45]
+2023-08-28T14:58:21.117+05:00  INFO 10676 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-28T14:58:21.593+05:00  WARN 10676 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator', GET]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-28T14:58:21.593+05:00  INFO 10676 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator', GET]
+2023-08-28T14:58:21.624+05:00  INFO 10676 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-28T14:58:21.710+05:00  INFO 10676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-28T14:58:21.727+05:00  INFO 10676 --- [main] c.springboot.mapping.MappingApplication  : Started MappingApplication in 7.609 seconds (process running for 8.024)
+2023-08-28T14:58:23.557+05:00  INFO 10676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-28T14:58:23.558+05:00  INFO 10676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-28T14:58:23.559+05:00  INFO 10676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-28T14:58:23.641+05:00 DEBUG 10676 --- [http-nio-8080-exec-1] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: a
+2023-08-28T14:58:27.874+05:00 DEBUG 10676 --- [http-nio-8080-exec-2] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T14:58:34.818+05:00 DEBUG 10676 --- [http-nio-8080-exec-3] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T14:58:37.631+05:00 DEBUG 10676 --- [http-nio-8080-exec-4] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T14:58:40.894+05:00 DEBUG 10676 --- [http-nio-8080-exec-5] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Math
+2023-08-28T14:58:59.264+05:00 DEBUG 10676 --- [http-nio-8080-exec-6] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: a
+2023-08-28T14:59:06.203+05:00 DEBUG 10676 --- [http-nio-8080-exec-7] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Math
+2023-08-28T15:02:50.473+05:00  INFO 10676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T15:02:50.476+05:00  INFO 10676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-28T15:02:50.479+05:00  INFO 10676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-28T15:02:54.669+05:00  INFO 4688 --- [main] c.springboot.mapping.MappingApplication  : Starting MappingApplication using Java 17.0.8 with PID 4688 (C:\Users\sami.ahmad\Downloads\workspaces\mapping\target\classes started by sami.ahmad in C:\Users\sami.ahmad\Downloads\workspaces\mapping)
+2023-08-28T15:02:54.672+05:00 DEBUG 4688 --- [main] c.springboot.mapping.MappingApplication  : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-28T15:02:54.673+05:00  INFO 4688 --- [main] c.springboot.mapping.MappingApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-08-28T15:02:56.001+05:00  INFO 4688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28T15:02:56.067+05:00  INFO 4688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2023-08-28T15:02:56.834+05:00  INFO 4688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-28T15:02:56.844+05:00  INFO 4688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-28T15:02:56.844+05:00  INFO 4688 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-28T15:02:56.958+05:00  INFO 4688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-28T15:02:56.958+05:00  INFO 4688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2233 ms
+2023-08-28T15:02:57.137+05:00  INFO 4688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-28T15:02:57.357+05:00  INFO 4688 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testDB user=SA
+2023-08-28T15:02:57.359+05:00  INFO 4688 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-28T15:02:57.371+05:00  INFO 4688 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDB'
+2023-08-28T15:02:57.603+05:00  INFO 4688 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-28T15:02:58.071+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.075+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.079+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.082+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.087+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.088+05:00  INFO 4688 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-28T15:02:58.102+05:00  INFO 4688 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-28T15:02:58.106+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.107+05:00  INFO 4688 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-28T15:02:58.109+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.110+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.153+05:00  INFO 4688 --- [main] liquibase.changelog                      : Table teacher created
+2023-08-28T15:02:58.155+05:00  INFO 4688 --- [main] liquibase.changelog                      : Primary key added to teacher (id)
+2023-08-28T15:02:58.156+05:00  INFO 4688 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::teacher team ran successfully in 5ms
+2023-08-28T15:02:58.159+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.160+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.163+05:00  INFO 4688 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T15:02:58.164+05:00  INFO 4688 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T15:02:58.166+05:00  INFO 4688 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T15:02:58.167+05:00  INFO 4688 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::teacher team ran successfully in 4ms
+2023-08-28T15:02:58.168+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.173+05:00  INFO 4688 --- [main] liquibase.changelog                      : Table users created
+2023-08-28T15:02:58.174+05:00  INFO 4688 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-28T15:02:58.178+05:00  INFO 4688 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-28T15:02:58.179+05:00  INFO 4688 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::teacher team ran successfully in 8ms
+2023-08-28T15:02:58.180+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.183+05:00  INFO 4688 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T15:02:58.185+05:00  INFO 4688 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T15:02:58.185+05:00  INFO 4688 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-28T15:02:58.186+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.187+05:00  INFO 4688 --- [main] liquibase                                : Update command completed successfully.
+2023-08-28T15:02:58.189+05:00  INFO 4688 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:02:58.190+05:00  INFO 4688 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-28T15:02:58.305+05:00  INFO 4688 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28T15:02:58.408+05:00  INFO 4688 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-28T15:02:58.410+05:00  INFO 4688 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-28T15:02:58.592+05:00  INFO 4688 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T15:02:58.737+05:00  INFO 4688 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-28T15:02:59.004+05:00  INFO 4688 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T15:02:59.707+05:00  INFO 4688 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28T15:02:59.711+05:00  INFO 4688 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T15:03:00.102+05:00  INFO 4688 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-28T15:03:00.728+05:00  INFO 4688 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b8de9dc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a8fa30a, org.springframework.security.web.context.SecurityContextHolderFilter@5dbd7f00, org.springframework.security.web.header.HeaderWriterFilter@4b45016d, org.springframework.security.web.csrf.CsrfFilter@4a65ce06, org.springframework.security.web.authentication.logout.LogoutFilter@758e8b8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@138c2ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a700311, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@522941b2, org.springframework.security.web.access.ExceptionTranslationFilter@295d1a45]
+2023-08-28T15:03:00.911+05:00  INFO 4688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-28T15:03:01.377+05:00  WARN 4688 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator', GET]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-28T15:03:01.378+05:00  INFO 4688 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator', GET]
+2023-08-28T15:03:01.407+05:00  INFO 4688 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-28T15:03:01.516+05:00  INFO 4688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-28T15:03:01.543+05:00  INFO 4688 --- [main] c.springboot.mapping.MappingApplication  : Started MappingApplication in 7.524 seconds (process running for 7.947)
+2023-08-28T15:03:12.092+05:00  INFO 4688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-28T15:03:12.092+05:00  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-28T15:03:12.094+05:00  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-28T15:03:12.168+05:00 DEBUG 4688 --- [http-nio-8080-exec-1] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Math
+2023-08-28T15:03:15.073+05:00 DEBUG 4688 --- [http-nio-8080-exec-2] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: M
+2023-08-28T15:03:30.540+05:00 DEBUG 4688 --- [http-nio-8080-exec-3] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: M
+2023-08-28T15:03:38.846+05:00 DEBUG 4688 --- [http-nio-8080-exec-4] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Math
+2023-08-28T15:03:44.112+05:00 DEBUG 4688 --- [http-nio-8080-exec-5] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T15:04:26.114+05:00  INFO 4688 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T15:04:26.119+05:00  INFO 4688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-28T15:04:26.123+05:00  INFO 4688 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-28T15:04:30.451+05:00  INFO 6148 --- [main] c.springboot.mapping.MappingApplication  : Starting MappingApplication using Java 17.0.8 with PID 6148 (C:\Users\sami.ahmad\Downloads\workspaces\mapping\target\classes started by sami.ahmad in C:\Users\sami.ahmad\Downloads\workspaces\mapping)
+2023-08-28T15:04:30.453+05:00 DEBUG 6148 --- [main] c.springboot.mapping.MappingApplication  : Running with Spring Boot v3.1.2, Spring v6.0.11
+2023-08-28T15:04:30.454+05:00  INFO 6148 --- [main] c.springboot.mapping.MappingApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-08-28T15:04:31.756+05:00  INFO 6148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-28T15:04:31.824+05:00  INFO 6148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2023-08-28T15:04:32.690+05:00  INFO 6148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-28T15:04:32.703+05:00  INFO 6148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-28T15:04:32.703+05:00  INFO 6148 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-28T15:04:32.829+05:00  INFO 6148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-28T15:04:32.829+05:00  INFO 6148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2320 ms
+2023-08-28T15:04:33.023+05:00  INFO 6148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-28T15:04:33.241+05:00  INFO 6148 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testDB user=SA
+2023-08-28T15:04:33.244+05:00  INFO 6148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-28T15:04:33.256+05:00  INFO 6148 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDB'
+2023-08-28T15:04:33.518+05:00  INFO 6148 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2023-08-28T15:04:34.008+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.010+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.015+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.018+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.023+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.024+05:00  INFO 6148 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-08-28T15:04:34.037+05:00  INFO 6148 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-08-28T15:04:34.041+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.042+05:00  INFO 6148 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-08-28T15:04:34.044+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.045+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.090+05:00  INFO 6148 --- [main] liquibase.changelog                      : Table teacher created
+2023-08-28T15:04:34.091+05:00  INFO 6148 --- [main] liquibase.changelog                      : Primary key added to teacher (id)
+2023-08-28T15:04:34.092+05:00  INFO 6148 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.1.yaml::schema-0.0.1::teacher team ran successfully in 5ms
+2023-08-28T15:04:34.096+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.097+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.099+05:00  INFO 6148 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T15:04:34.101+05:00  INFO 6148 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T15:04:34.102+05:00  INFO 6148 --- [main] liquibase.changelog                      : New row inserted into teacher
+2023-08-28T15:04:34.103+05:00  INFO 6148 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.1.yaml::data-0.0.1::teacher team ran successfully in 4ms
+2023-08-28T15:04:34.104+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.108+05:00  INFO 6148 --- [main] liquibase.changelog                      : Table users created
+2023-08-28T15:04:34.109+05:00  INFO 6148 --- [main] liquibase.changelog                      : Primary key added to users (id)
+2023-08-28T15:04:34.112+05:00  INFO 6148 --- [main] liquibase.changelog                      : Unique constraint added to users(user_name)
+2023-08-28T15:04:34.113+05:00  INFO 6148 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-schema-0.0.2.yaml::schema-0.0.2::teacher team ran successfully in 8ms
+2023-08-28T15:04:34.114+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.117+05:00  INFO 6148 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T15:04:34.119+05:00  INFO 6148 --- [main] liquibase.changelog                      : New row inserted into users
+2023-08-28T15:04:34.120+05:00  INFO 6148 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-data-0.0.2.yaml::data-0.0.2::news team ran successfully in 4ms
+2023-08-28T15:04:34.121+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.122+05:00  INFO 6148 --- [main] liquibase                                : Update command completed successfully.
+2023-08-28T15:04:34.124+05:00  INFO 6148 --- [main] liquibase.executor                       : Changelog query completed.
+2023-08-28T15:04:34.124+05:00  INFO 6148 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-08-28T15:04:34.219+05:00  INFO 6148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-28T15:04:34.326+05:00  INFO 6148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-28T15:04:34.328+05:00  INFO 6148 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-28T15:04:34.516+05:00  INFO 6148 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T15:04:34.673+05:00  INFO 6148 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-28T15:04:34.982+05:00  INFO 6148 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-28T15:04:35.696+05:00  INFO 6148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-28T15:04:35.700+05:00  INFO 6148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-28T15:04:36.090+05:00  INFO 6148 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-08-28T15:04:36.676+05:00  INFO 6148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a516e4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6faa24, org.springframework.security.web.context.SecurityContextHolderFilter@7f3616d2, org.springframework.security.web.header.HeaderWriterFilter@47d8c666, org.springframework.security.web.csrf.CsrfFilter@7c9a0166, org.springframework.security.web.authentication.logout.LogoutFilter@5d8319a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6212dc7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64bcf689, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fcf3192, org.springframework.security.web.access.ExceptionTranslationFilter@3c832820]
+2023-08-28T15:04:36.869+05:00  INFO 6148 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-28T15:04:37.321+05:00  WARN 6148 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator', GET]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-08-28T15:04:37.321+05:00  INFO 6148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator', GET]
+2023-08-28T15:04:37.342+05:00  INFO 6148 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-28T15:04:37.446+05:00  INFO 6148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-28T15:04:37.465+05:00  INFO 6148 --- [main] c.springboot.mapping.MappingApplication  : Started MappingApplication in 7.656 seconds (process running for 8.091)
+2023-08-28T15:04:40.396+05:00  INFO 6148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-28T15:04:40.397+05:00  INFO 6148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-28T15:04:40.398+05:00  INFO 6148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-28T15:04:40.480+05:00 DEBUG 6148 --- [http-nio-8080-exec-1] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T15:04:45.297+05:00 DEBUG 6148 --- [http-nio-8080-exec-2] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Math
+2023-08-28T15:04:47.600+05:00 DEBUG 6148 --- [http-nio-8080-exec-3] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Ma
+2023-08-28T15:04:50.908+05:00 DEBUG 6148 --- [http-nio-8080-exec-4] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: Science
+2023-08-28T15:04:53.922+05:00 DEBUG 6148 --- [http-nio-8080-exec-5] c.s.mapping.teacher.TeacherService       : Fetching all teachers
+2023-08-28T15:04:56.592+05:00 DEBUG 6148 --- [http-nio-8080-exec-6] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: a
+2023-08-28T15:05:00.512+05:00 DEBUG 6148 --- [http-nio-8080-exec-7] c.s.mapping.teacher.TeacherService       : Searching teacher with course containing: i
