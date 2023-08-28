@@ -11,7 +11,6 @@ import java.util.Map;
 @RequestMapping("/api/v1/teacher")
 public class TeacherController {
     private final TeacherService service;
-
     public TeacherController(TeacherService service) {
         this.service = service;
     }
@@ -33,9 +32,6 @@ public class TeacherController {
         return ResponseEntity.ok(Map.of("content", teachers));
     }
 
-
-
-
     @GetMapping("/{id}")
     public ResponseEntity<Teacher> findById(@PathVariable("id") Long id) {
         Teacher teacher = service.findById(id);
@@ -48,10 +44,10 @@ public class TeacherController {
     @PostMapping("/")
     public ResponseEntity<Teacher> create(@RequestBody Teacher teacher) {
         Teacher created = service.create(teacher);
-        if (created != null) {
-            return ResponseEntity.ok(created);
+        if (created ==null) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).build();
         }
-        return ResponseEntity.status(HttpStatus.CONFLICT).build();
+        return ResponseEntity.ok(created);
     }
 
     //PUT Mapping

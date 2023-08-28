@@ -1,5 +1,9 @@
 com\springboot\mapping\teacher\TeacherRepository.class
 com\springboot\mapping\teacher\TeacherController.class
-com\springboot\mapping\teacher\TeacherService.class
+com\springboot\mapping\user\User.class
 com\springboot\mapping\teacher\Teacher.class
 com\springboot\mapping\MappingApplication.class
+com\springboot\mapping\config\WebSecurityConfiguration.class
+com\springboot\mapping\teacher\TeacherService.class
+com\springboot\mapping\user\UserRepository.class
+com\springboot\mapping\user\UserService.class

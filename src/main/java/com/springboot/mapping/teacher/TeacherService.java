@@ -34,7 +34,7 @@ public class TeacherService {
             course = defaultCourse;
         }
 
-        logger.debug("Searching teacher with course containing: {}", course);
+        logger.debug("Searching teacher with course containing: {}", course.replaceAll("[\r\n]",""));
         return repository.findByCourseContaining(course);
     }
 
