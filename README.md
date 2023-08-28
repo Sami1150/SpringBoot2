@@ -13,5 +13,13 @@
   <li>Configuration File</li>
   <li>User Identity</li>
   <li>DB Setup for User</li>
-  <li>Testing with Spring Boot Security (In Progress - Functions left)</li>
+  <li>Testing with Spring Boot Security</li>
+  <li>Checkstyle Plugin</li>
+  <li>PMD Plugin</li>
+  <li>SpotBugs</li>
+  <li>CMD: Spotbugs Ui</li>
+  <li>Swagger documentation [/v3/api-docs] & UI[/swagger-ui.html]</li>
+  <li>Actuator Endpoints [/actuator]</li>
+  <li>Grafana Dashboard to see /actuator/metrics endpoints</li>
+  <li>Cucumber.io</li>
 </ul>
