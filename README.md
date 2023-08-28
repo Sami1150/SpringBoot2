@@ -9,4 +9,9 @@
   <li>@Value</li>
   <li>Logging properties</li>
   <li>logback-spring.xml</li>
+  <li>Spring Security Dependency</li>
+  <li>Configuration File</li>
+  <li>User Identity</li>
+  <li>DB Setup for User</li>
+  <li>Testing with Spring Boot Security (In Progress - Functions left)</li>
 </ul>
