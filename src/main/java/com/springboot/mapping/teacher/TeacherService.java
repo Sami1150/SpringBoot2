@@ -4,11 +4,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-
+import com.springboot.mapping.config.CacheConfiguration;
 import java.util.List;
 import java.util.Optional;
+
 
 @Service
 public class TeacherService {
@@ -20,9 +23,13 @@ public class TeacherService {
     @Value("${teacher.default.course}")
     private String defaultCourse;
 
+
     public TeacherService(TeacherRepository repository) {
         this.repository = repository;
     }
+
+
+    @Cacheable(cacheNames = "teachers")
     public List<Teacher> findAll() {
         logger.debug("Fetching all teachers");
         return repository.findAll();

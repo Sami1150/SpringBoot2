@@ -1,5 +1,8 @@
 package com.springboot.mapping.config;
 
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -9,6 +12,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 
+@EnableCaching
 @EnableMethodSecurity
 @Configuration
 public class WebSecurityConfiguration {
@@ -78,4 +82,5 @@ public class WebSecurityConfiguration {
 
         return http.build();
     }
+
 }
