@@ -64,7 +64,7 @@ public class WebSecurityConfiguration {
           Form-based authentication is a common way to authenticate users by presenting them with a login form where they can enter their credentials.
 
          */
-        http.formLogin(Customizer.withDefaults());
+//        http.formLogin(Customizer.withDefaults());
 
 //        http.exceptionHandling(config -> config.defaultAuthenticationEntryPointFor(
 //                (request, response, ex) -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Not Authorized"),
@@ -73,7 +73,7 @@ public class WebSecurityConfiguration {
 //        http.csrf(config -> config.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
 //                .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler()));
 
-        http.authorizeHttpRequests(config -> config.anyRequest().authenticated());
+//        http.authorizeHttpRequests(config -> config.anyRequest().authenticated());
 
 //        Disable CSRF
 //        http.csrf(csrf -> csrf.disable());

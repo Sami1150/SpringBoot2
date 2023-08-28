@@ -1,27 +1,25 @@
 package com.springboot.mapping.teacher;
 
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.request.RequestPostProcessor;
-import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+
+import java.util.Arrays;
+import java.util.List;
 
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -32,14 +30,19 @@ public class TeacherControllerTest {
     private TeacherService teacherService;
     @Test
     public void testFindAllTeachers() throws Exception {
-        mockMvc.perform(get("/api/v1/teacher")
-                        .with(testUser("reporter","REPORTER"))
-                        .with(SecurityMockMvcRequestPostProcessors.csrf()))
-                .andDo(MockMvcResultHandlers.print())
-                .andExpect(status().is2xxSuccessful())
-                .andExpect(MockMvcResultMatchers.content().string(
-                        Matchers.startsWith("{\"content\":[{\"id\":1,\"course\":\"Science\",\"salary\":50000},{\"id\":2,\"course\":\"Math\",\"salary\":60000},{\"id\":3,\"course\":\"History\",\"salary\":45000}]}"
-                        )));
+        List<Teacher> teachers = Arrays.asList(
+                new Teacher(1, "Science", 50000),
+                new Teacher(2, "Math", 60000),
+                new Teacher(3, "History", 45000)
+        );
+
+        when(teacherService.findAll()).thenReturn(teachers);
+
+        mockMvc.perform(get("/api/v1/teacher"))
+                .andExpect(status().isOk())
+                .andExpect(content().json("{\"content\":[{\"id\":1,\"course\":\"Science\",\"salary\":50000},{\"id\":2,\"course\":\"Math\",\"salary\":60000},{\"id\":3,\"course\":\"History\",\"salary\":45000}]}"));
+
+        verify(teacherService, times(1)).findAll();
     }
 
     // Test Get Teacher by ID:
@@ -117,16 +120,33 @@ public class TeacherControllerTest {
 
     // Test to verify DELETE Method
     @Test
-    public void testDelete() throws Exception {
-        // Mock the service method to indicate successful deletion
-        when(teacherService.delete(4L)).thenReturn(true);
+    public void testDeleteResource() throws Exception {
+        long existingTeacherId = 4L;
+        long missingTeacherId = 999L; // Non-existent teacher ID
 
-        // Test the controller method for deleting a teacher
-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/v1/teacher/4")
+        // Mock the service method for existing teacher
+        when(teacherService.delete(existingTeacherId)).thenReturn(true);
+
+        // Mock the service method for missing teacher
+        when(teacherService.delete(missingTeacherId)).thenReturn(false);
+
+        // Perform the delete request for existing teacher
+        mockMvc.perform(delete("/api/v1/teacher/{id}", existingTeacherId)
                         .with(testUser("reporter", "REPORTER"))
                         .with(SecurityMockMvcRequestPostProcessors.csrf()))
-                .andExpect(status().isNoContent()) // HTTP 204 indicates successful deletion
-                .andReturn();
+                .andExpect(status().isOk())
+                .andExpect(content().string("Resource deleted successfully"));
+
+        // Perform the delete request for missing teacher
+        mockMvc.perform(delete("/api/v1/teacher/{id}", missingTeacherId)
+                        .with(testUser("reporter", "REPORTER"))
+                        .with(SecurityMockMvcRequestPostProcessors.csrf()))
+                .andExpect(status().isNotFound())
+                .andExpect(content().string("Resource not found or could not be deleted"));
+
+        // Verify that the delete method of teacherService is called with the correct IDs
+        verify(teacherService, times(1)).delete(existingTeacherId);
+        verify(teacherService, times(1)).delete(missingTeacherId);
     }
 
 
