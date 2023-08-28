@@ -15,4 +15,6 @@
   <li>DB Setup for User</li>
   <li>Testing with Spring Boot Security (In Progress - Functions left)</li>
 <li>@Caching Implementation: https://www.baeldung.com/spring-boot-caffeine-cache</li>
+  <li>@Scheduling: https://www.baeldung.com/spring-scheduled-tasks</li>
+  <li>@Async: https://www.baeldung.com/spring-async</li>
 </ul>
